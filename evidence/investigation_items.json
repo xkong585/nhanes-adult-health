@@ -1,0 +1,7 @@
+{
+  "BMI_over_60": 21,
+  "HbA1c_over_14": 4,
+  "BMI_height_weight_disagreement_over_0_2": 0,
+  "height_weight_pairs_checked": 8005,
+  "interpretation": "Investigate; real measured extremes are retained. BMI uses rounded source height/weight."
+}

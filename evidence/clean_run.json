@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "mode": "empty_raw_and_processed_directories; official downloads; full pipeline and tests",
+  "elapsed_seconds": 12.907,
+  "tables": [
+    {
+      "table": "table1.csv",
+      "identical": true,
+      "sha256": "128b36c7f6ed4e7338342c2af092e6b506f89a05ded1c1cb0c0c72375780d31a"
+    },
+    {
+      "table": "model_results.csv",
+      "identical": true,
+      "sha256": "dedf0d313e79edd7215b285ce74c72873ee3496ac5adb679ae324955c0f503e4"
+    },
+    {
+      "table": "cohort_flow.csv",
+      "identical": true,
+      "sha256": "860c3c51edbbce54d44eba84724e1f23d779bce29f10ae947a03077be39eadb3"
+    },
+    {
+      "table": "reconciliation_checks.csv",
+      "identical": true,
+      "sha256": "b0c9457de6c53746c5cb6375224ea027291063a5673aa8bfa0b2645c1be9990e"
+    }
+  ],
+  "clean_run_log": {
+    "started_at_utc": "2026-10-31T19:29:10.316754+00:00",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "download_and_verify",
+        "seconds": 4.715
+      },
+      {
+        "name": "decode_official_XPT",
+        "seconds": 0.311
+      },
+      {
+        "name": "prepare_and_QC",
+        "seconds": 0.084
+      },
+      {
+        "name": "survey_analysis",
+        "seconds": 0.619
+      },
+      {
+        "name": "independent_reconciliation",
+        "seconds": 0.027
+      },
+      {
+        "name": "tests",
+        "seconds": 0.304
+      }
+    ],
+    "elapsed_seconds": 12.648,
+    "environment": {
+      "python": "3.12.14",
+      "platform": "macOS-26.6-arm64-arm-64bit",
+      "packages": {
+        "pandas": "2.3.3",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3",
+        "pyarrow": "19.0.1",
+        "matplotlib": "3.10.7",
+        "reportlab": "4.4.4",
+        "pytest": "8.4.2"
+      }
+    },
+    "source_lock_sha256": "df11e020b5eb2f34a0af9416d06c22baf92678d8a5522e1f1574f219dd445227",
+    "analysis_plan_sha256": "67349e87c71f427e076fa03bac3685bee1f445caeed3246c2de95f742bda38a6"
+  }
+}

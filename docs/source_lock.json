@@ -1,0 +1,58 @@
+[
+  {
+    "file": "BMX_J.htm",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.htm",
+    "sha256": "557b2ad6946237b7a169819006e7126e48e25cdb45926605cb368342c6773689",
+    "first_obtained_utc": "2026-10-31T19:19:27.041538+00:00"
+  },
+  {
+    "file": "BMX_J.xpt",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/BMX_J.xpt",
+    "sha256": "8d675e42d8826ac98714b2c3dd4c5138a5e353fb4424f7eff5e6db4a01ce838a",
+    "first_obtained_utc": "2026-10-31T19:19:27.279473+00:00"
+  },
+  {
+    "file": "DEMO_J.htm",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+    "sha256": "07f8f1e7f884fab180ccf53c705652de9d663833fdad85b0d759919c8464cde0",
+    "first_obtained_utc": "2026-10-31T19:19:26.640420+00:00"
+  },
+  {
+    "file": "DEMO_J.xpt",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.xpt",
+    "sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+    "first_obtained_utc": "2026-10-31T19:19:27.002054+00:00"
+  },
+  {
+    "file": "DIQ_J.htm",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.htm",
+    "sha256": "d2545b2ef455fabf4f5ef8873b9c46d2ce5e599424f3f7d6bec236a57bf0d869",
+    "first_obtained_utc": "2026-10-31T19:19:27.578359+00:00"
+  },
+  {
+    "file": "DIQ_J.xpt",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DIQ_J.xpt",
+    "sha256": "1ecbf5360dfc331d1efbf32198553dc30e9a1f4cff0a907ed30ca72bac797f89",
+    "first_obtained_utc": "2026-10-31T19:19:27.500215+00:00"
+  },
+  {
+    "file": "GHB_J.htm",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.htm",
+    "sha256": "b9f90ef7aa539fe98edc776818ddfbfc4ee9f88ecf5c21ba168c5de8116e174d",
+    "first_obtained_utc": "2026-10-31T19:19:26.502577+00:00"
+  },
+  {
+    "file": "GHB_J.xpt",
+    "cycle": "2017-2018",
+    "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GHB_J.xpt",
+    "sha256": "35f07094573a0061a03ed609a5a363b34eb1b1c7065d1623b43d72e132a8a654",
+    "first_obtained_utc": "2026-10-31T19:19:26.640531+00:00"
+  }
+]

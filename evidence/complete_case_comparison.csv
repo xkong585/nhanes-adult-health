@@ -1,0 +1,3 @@
+group,n,unweighted_mean_age,unweighted_female_fraction,denominator
+excluded,325,51.353846153846156,0.48,positive-MEC-weight adults; excludes interview-only adults
+retained,4940,51.414574898785425,0.5198380566801619,positive-MEC-weight adults; excludes interview-only adults

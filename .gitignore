@@ -1,0 +1,12 @@
+.venv/
+.Rlibrary/
+.Rhistory
+__pycache__/
+.pytest_cache/
+.mplconfig/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.tmp
+.DS_Store

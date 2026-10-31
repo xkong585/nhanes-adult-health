@@ -1,0 +1,4 @@
+component,left_rows,right_rows,matched,unmatched,orphan_keys,output_rows,interpretation
+GHB_J,9254,6401,6401,2853,0,9254,Age 12+ MEC lab component; unmatched include younger/non-examined participants
+BMX_J,9254,8704,8704,550,0,9254,Examined participants with body measurements; variable eligibility differs by age
+DIQ_J,9254,8897,8897,357,0,9254,Questionnaire age 1+; infants are not eligible

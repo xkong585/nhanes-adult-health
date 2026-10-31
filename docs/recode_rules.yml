@@ -1,0 +1,8 @@
+DIQ010:
+  valid: {1: yes, 2: no, 3: borderline}
+  missing: {7: refused, 9: dont_know}
+  source_missing: source_missing
+LBXGH:
+  missing: SAS_dot_only
+BMXBMI:
+  missing: SAS_dot_only

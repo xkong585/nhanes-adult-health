@@ -1,0 +1,542 @@
+{
+  "primary": {
+    "model": "primary",
+    "term": "bmi5",
+    "estimate": 0.124515514538956,
+    "se": 0.0098471328497382,
+    "lower": 0.103060455150509,
+    "upper": 0.145970573927404,
+    "p_value": 2.69323613085655e-08,
+    "df": 12,
+    "n": 4940
+  },
+  "table": [
+    {
+      "group": "All adults",
+      "variable": "BMXBMI",
+      "n": 4940,
+      "estimate": 29.8518756597581,
+      "se": 0.256129966658413,
+      "lower": 29.3059475587198,
+      "upper": 30.3978037607964,
+      "df": 15,
+      "unweighted": 29.8746963562753
+    },
+    {
+      "group": "All adults",
+      "variable": "LBXGH",
+      "n": 4940,
+      "estimate": 5.68476540912522,
+      "se": 0.0172650271008484,
+      "lower": 5.64796587495704,
+      "upper": 5.7215649432934,
+      "df": 15,
+      "unweighted": 5.86655870445344
+    },
+    {
+      "group": "All adults",
+      "variable": "RIDAGEYR",
+      "n": 4940,
+      "estimate": 48.3841109036731,
+      "se": 0.587661930836176,
+      "lower": 47.1315391482496,
+      "upper": 49.6366826590967,
+      "df": 15,
+      "unweighted": 51.4145748987854
+    },
+    {
+      "group": "All adults",
+      "variable": "female",
+      "n": 4940,
+      "estimate": 0.520618887997662,
+      "se": 0.0095265024865346,
+      "lower": 0.500313628601964,
+      "upper": 0.54092414739336,
+      "df": 15,
+      "unweighted": 0.519838056680162
+    },
+    {
+      "group": "20-39",
+      "variable": "BMXBMI",
+      "n": 1481,
+      "estimate": 29.3003444210043,
+      "se": 0.403740170080323,
+      "lower": 28.4397926189623,
+      "upper": 30.1608962230462,
+      "df": 15,
+      "unweighted": 29.3836596893991
+    },
+    {
+      "group": "20-39",
+      "variable": "LBXGH",
+      "n": 1481,
+      "estimate": 5.3224772802233,
+      "se": 0.0186919370695057,
+      "lower": 5.28263635945087,
+      "upper": 5.36231820099573,
+      "df": 15,
+      "unweighted": 5.37839297771776
+    },
+    {
+      "group": "20-39",
+      "variable": "RIDAGEYR",
+      "n": 1481,
+      "estimate": 29.4504495542246,
+      "se": 0.227078879593271,
+      "lower": 28.9664423795093,
+      "upper": 29.9344567289399,
+      "df": 15,
+      "unweighted": 29.6401080351114
+    },
+    {
+      "group": "20-39",
+      "variable": "female",
+      "n": 1481,
+      "estimate": 0.506297175984924,
+      "se": 0.0143794765653637,
+      "lower": 0.475648047194292,
+      "upper": 0.536946304775555,
+      "df": 15,
+      "unweighted": 0.538149898717083
+    },
+    {
+      "group": "40-59",
+      "variable": "BMXBMI",
+      "n": 1568,
+      "estimate": 30.580067393196,
+      "se": 0.313969130212861,
+      "lower": 29.910858033284,
+      "upper": 31.249276753108,
+      "df": 15,
+      "unweighted": 30.6457908163265
+    },
+    {
+      "group": "40-59",
+      "variable": "LBXGH",
+      "n": 1568,
+      "estimate": 5.78600686387677,
+      "se": 0.0344711695841493,
+      "lower": 5.71253330513172,
+      "upper": 5.85948042262182,
+      "df": 15,
+      "unweighted": 5.9344387755102
+    },
+    {
+      "group": "40-59",
+      "variable": "RIDAGEYR",
+      "n": 1568,
+      "estimate": 50.1367409866241,
+      "se": 0.236057455937793,
+      "lower": 49.6335964294395,
+      "upper": 50.6398855438087,
+      "df": 15,
+      "unweighted": 49.9470663265306
+    },
+    {
+      "group": "40-59",
+      "variable": "female",
+      "n": 1568,
+      "estimate": 0.511599399272637,
+      "se": 0.0153062944673697,
+      "lower": 0.478974804885958,
+      "upper": 0.544223993659317,
+      "df": 15,
+      "unweighted": 0.533163265306123
+    },
+    {
+      "group": "60+",
+      "variable": "BMXBMI",
+      "n": 1891,
+      "estimate": 29.6514898713726,
+      "se": 0.2348409018769,
+      "lower": 29.1509383377882,
+      "upper": 30.1520414049569,
+      "df": 15,
+      "unweighted": 29.6198836594395
+    },
+    {
+      "group": "60+",
+      "variable": "LBXGH",
+      "n": 1891,
+      "estimate": 6.00766742106457,
+      "se": 0.0275102717320732,
+      "lower": 5.94903066488302,
+      "upper": 6.06630417724612,
+      "df": 15,
+      "unweighted": 6.19259650978318
+    },
+    {
+      "group": "60+",
+      "variable": "RIDAGEYR",
+      "n": 1891,
+      "estimate": 69.5244323486159,
+      "se": 0.239530165848176,
+      "lower": 69.0138858854709,
+      "upper": 70.0349788117608,
+      "df": 15,
+      "unweighted": 69.6848228450555
+    },
+    {
+      "group": "60+",
+      "variable": "female",
+      "n": 1891,
+      "estimate": 0.549079463080091,
+      "se": 0.0123309652657855,
+      "lower": 0.52279663276802,
+      "upper": 0.575362293392163,
+      "df": 15,
+      "unweighted": 0.494447382337388
+    }
+  ],
+  "models": [
+    {
+      "model": "primary",
+      "term": "bmi5",
+      "estimate": 0.124515514538956,
+      "se": 0.0098471328497382,
+      "lower": 0.103060455150509,
+      "upper": 0.145970573927404,
+      "p_value": 2.69323613085655e-08,
+      "df": 12,
+      "n": 4940
+    },
+    {
+      "model": "no_reported_diabetes",
+      "term": "bmi5",
+      "estimate": 0.0754076601877327,
+      "se": 0.0067622594621424,
+      "lower": 0.0606739625140782,
+      "upper": 0.0901413578613873,
+      "p_value": 1.09022048686943e-07,
+      "df": 12,
+      "n": 3994
+    },
+    {
+      "model": "race_adjusted",
+      "term": "bmi5",
+      "estimate": 0.124739754872826,
+      "se": 0.0104703186585328,
+      "lower": 0.0999813854509548,
+      "upper": 0.149498124294697,
+      "p_value": 6.67396230075296e-06,
+      "df": 7,
+      "n": 4940
+    }
+  ],
+  "bands": [
+    {
+      "group": "<18.5",
+      "variable": "LBXGH",
+      "n": 74,
+      "estimate": 5.39099921133885,
+      "se": 0.103930577357049,
+      "lower": 5.1664708495686,
+      "upper": 5.6155275731091,
+      "df": 13,
+      "unweighted": 5.38378378378378
+    },
+    {
+      "group": "18.5-<25",
+      "variable": "LBXGH",
+      "n": 1189,
+      "estimate": 5.42597011126169,
+      "se": 0.0292131152181917,
+      "lower": 5.36370383010549,
+      "upper": 5.48823639241789,
+      "df": 15,
+      "unweighted": 5.59873843566022
+    },
+    {
+      "group": "25-<30",
+      "variable": "LBXGH",
+      "n": 1593,
+      "estimate": 5.65003583149811,
+      "se": 0.027487221161916,
+      "lower": 5.59144820644384,
+      "upper": 5.70862345655237,
+      "df": 15,
+      "unweighted": 5.85461393596987
+    },
+    {
+      "group": "30-<35",
+      "variable": "LBXGH",
+      "n": 1089,
+      "estimate": 5.75033572892355,
+      "se": 0.0347413567860527,
+      "lower": 5.67628627978979,
+      "upper": 5.82438517805731,
+      "df": 15,
+      "unweighted": 5.94508723599633
+    },
+    {
+      "group": "35-<40",
+      "variable": "LBXGH",
+      "n": 549,
+      "estimate": 5.97279918778298,
+      "se": 0.0653047951809867,
+      "lower": 5.8336053117716,
+      "upper": 6.11199306379437,
+      "df": 15,
+      "unweighted": 6.13060109289617
+    },
+    {
+      "group": "40+",
+      "variable": "LBXGH",
+      "n": 446,
+      "estimate": 6.02520888862199,
+      "se": 0.0725166856847064,
+      "lower": 5.87064323187382,
+      "upper": 6.17977454537016,
+      "df": 15,
+      "unweighted": 6.18654708520179
+    }
+  ],
+  "flow": [
+    {
+      "stage": "age_missing",
+      "n": 0
+    },
+    {
+      "stage": "under_20",
+      "n": 3685
+    },
+    {
+      "stage": "no_MEC_weight",
+      "n": 304
+    },
+    {
+      "stage": "BMI_missing",
+      "n": 90
+    },
+    {
+      "stage": "HbA1c_missing",
+      "n": 235
+    },
+    {
+      "stage": "adjustment_missing",
+      "n": 0
+    },
+    {
+      "stage": "retained",
+      "n": 4940
+    }
+  ],
+  "joins": [
+    {
+      "component": "GHB_J",
+      "left_rows": 9254,
+      "right_rows": 6401,
+      "matched": 6401,
+      "unmatched": 2853,
+      "orphan_keys": 0,
+      "output_rows": 9254,
+      "interpretation": "Age 12+ MEC lab component; unmatched include younger/non-examined participants"
+    },
+    {
+      "component": "BMX_J",
+      "left_rows": 9254,
+      "right_rows": 8704,
+      "matched": 8704,
+      "unmatched": 550,
+      "orphan_keys": 0,
+      "output_rows": 9254,
+      "interpretation": "Examined participants with body measurements; variable eligibility differs by age"
+    },
+    {
+      "component": "DIQ_J",
+      "left_rows": 9254,
+      "right_rows": 8897,
+      "matched": 8897,
+      "unmatched": 357,
+      "orphan_keys": 0,
+      "output_rows": 9254,
+      "interpretation": "Questionnaire age 1+; infants are not eligible"
+    }
+  ],
+  "checks": [
+    {
+      "check": "DEMO_J.required_fields",
+      "status": "pass"
+    },
+    {
+      "check": "DEMO_J.key_unique_nonnull",
+      "status": "pass"
+    },
+    {
+      "check": "GHB_J.required_fields",
+      "status": "pass"
+    },
+    {
+      "check": "GHB_J.key_unique_nonnull",
+      "status": "pass"
+    },
+    {
+      "check": "BMX_J.required_fields",
+      "status": "pass"
+    },
+    {
+      "check": "BMX_J.key_unique_nonnull",
+      "status": "pass"
+    },
+    {
+      "check": "DIQ_J.required_fields",
+      "status": "pass"
+    },
+    {
+      "check": "DIQ_J.key_unique_nonnull",
+      "status": "pass"
+    },
+    {
+      "check": "GHB_J.one_to_one_left_join",
+      "status": "pass"
+    },
+    {
+      "check": "BMX_J.one_to_one_left_join",
+      "status": "pass"
+    },
+    {
+      "check": "DIQ_J.one_to_one_left_join",
+      "status": "pass"
+    },
+    {
+      "check": "RIAGENDR.valid_categories",
+      "status": "pass"
+    },
+    {
+      "check": "RIDRETH3.valid_categories",
+      "status": "pass"
+    },
+    {
+      "check": "BMXBMI.positive_finite",
+      "status": "pass"
+    },
+    {
+      "check": "LBXGH.positive_finite",
+      "status": "pass"
+    },
+    {
+      "check": "cohort.flow_conservation",
+      "status": "pass"
+    },
+    {
+      "check": "MEC.design_identifiers",
+      "status": "pass"
+    },
+    {
+      "check": "DIQ010.variable_specific_recode",
+      "status": "pass"
+    }
+  ],
+  "reconcile": [
+    {
+      "check": "BMXBMI.mean",
+      "python": 29.85187565975808,
+      "R_survey": 29.8518756597581,
+      "absolute_difference": 2.131628207280301e-14,
+      "pass": true
+    },
+    {
+      "check": "BMXBMI.Taylor_SE",
+      "python": 0.2561299666584141,
+      "R_survey": 0.256129966658413,
+      "absolute_difference": 1.1657341758564144e-15,
+      "pass": true
+    },
+    {
+      "check": "LBXGH.mean",
+      "python": 5.684765409125229,
+      "R_survey": 5.68476540912522,
+      "absolute_difference": 8.881784197001252e-15,
+      "pass": true
+    },
+    {
+      "check": "LBXGH.Taylor_SE",
+      "python": 0.0172650271008484,
+      "R_survey": 0.0172650271008484,
+      "absolute_difference": 5.551115123125783e-17,
+      "pass": true
+    },
+    {
+      "check": "primary.(Intercept)",
+      "python": 4.159519813515574,
+      "R_survey": 4.15951981351568,
+      "absolute_difference": 1.056932319443149e-13,
+      "pass": true
+    },
+    {
+      "check": "primary.bmi5",
+      "python": 0.1245155145389748,
+      "R_survey": 0.124515514538956,
+      "absolute_difference": 1.8832158055204215e-14,
+      "pass": true
+    },
+    {
+      "check": "primary.RIDAGEYR",
+      "python": 0.0170564140898505,
+      "R_survey": 0.0170564140898509,
+      "absolute_difference": 3.642919299551295e-16,
+      "pass": true
+    },
+    {
+      "check": "primary.sexFemale",
+      "python": -0.0833972179636046,
+      "R_survey": -0.0833972179636333,
+      "absolute_difference": 2.8629876247521224e-14,
+      "pass": true
+    }
+  ],
+  "design": [
+    {
+      "design": "full_MEC",
+      "n": 8704,
+      "df": 15
+    },
+    {
+      "design": "adult_MEC",
+      "n": 5265,
+      "df": 15
+    },
+    {
+      "design": "complete_case",
+      "n": 4940,
+      "df": 15
+    }
+  ],
+  "missing": [
+    {
+      "group": "excluded",
+      "n": 325,
+      "unweighted_mean_age": 51.35384615384616,
+      "unweighted_female_fraction": 0.48,
+      "denominator": "positive-MEC-weight adults; excludes interview-only adults"
+    },
+    {
+      "group": "retained",
+      "n": 4940,
+      "unweighted_mean_age": 51.414574898785425,
+      "unweighted_female_fraction": 0.5198380566801619,
+      "denominator": "positive-MEC-weight adults; excludes interview-only adults"
+    }
+  ],
+  "diagnostics": [
+    {
+      "metric": "max_leverage",
+      "value": 0.0138375707070555
+    },
+    {
+      "metric": "leverage_over_2p_n",
+      "value": 641.0
+    },
+    {
+      "metric": "weighted_residual_RMSE",
+      "value": 1.10919138970314
+    }
+  ],
+  "investigations": {
+    "BMI_over_60": 21,
+    "HbA1c_over_14": 4,
+    "BMI_height_weight_disagreement_over_0_2": 0,
+    "height_weight_pairs_checked": 8005,
+    "interpretation": "Investigate; real measured extremes are retained. BMI uses rounded source height/weight."
+  }
+}

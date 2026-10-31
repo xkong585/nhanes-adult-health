@@ -1,0 +1,13 @@
+source,field,label,unit,coding,eligibility
+DEMO_J,SEQN,participant key,identifier,unique nonmissing,all
+DEMO_J,RIDAGEYR,age at screening,years,0-80; 80 is top-coded,all
+DEMO_J,RIAGENDR,sex category recorded in source,category,1 male; 2 female,all
+DEMO_J,RIDRETH3,race/Hispanic origin,category,1 Mexican American;2 other Hispanic;3 NH White;4 NH Black;6 NH Asian;7 other/multiracial,all
+DEMO_J,WTMEC2YR,2-year MEC weight,population weight,positive for usable MEC design; zero excluded,all
+DEMO_J,SDMVSTRA,masked variance stratum,category,nest PSU within stratum,all
+DEMO_J,SDMVPSU,masked primary sampling unit,category,1 or 2 within stratum,all
+GHB_J,LBXGH,glycohemoglobin,percent,continuous; dot missing; 7 and 9 are valid measurements,12+ years
+BMX_J,BMXBMI,body mass index,kg/m²,continuous; dot missing,2+ years
+BMX_J,BMXWT,body weight,kg,continuous; dot missing,examined; all ages
+BMX_J,BMXHT,standing height,cm,continuous; dot missing,2+ years
+DIQ_J,DIQ010,doctor told participant has diabetes,category,1 yes;2 no;3 borderline;7 refused;9 do not know;dot missing,1+ years
