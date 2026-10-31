@@ -1,0 +1,449 @@
+{
+  "title": "NHANES | HbA1c ML benchmarks",
+  "scope": "4,940 complete-case adults, NHANES 2017-2018. Predict concurrent HbA1c (%) using age, sex and BMI. Original survey association analysis remains the primary analysis.",
+  "validation": "Five outer folds hold out entire nested stratum/PSU groups. All transformations and weighted fits use training folds only. Hyperparameters were fixed in advance; no outer-fold model selection. Every adult receives one held-out prediction. Weighted metrics use MEC weights; these are predictive scores, not survey-design confidence intervals.",
+  "limitations": "Cross-sectional prediction does not establish causality or predict future diabetes. Complete cases are a selected population; no external validation. Fold differences and sex/age errors are diagnostics, not proof of fairness. Race, diagnosis and outcome-derived features are excluded.",
+  "primary_metric": "weighted_MAE",
+  "n": 4940,
+  "features": [
+    "RIDAGEYR",
+    "RIAGENDR",
+    "BMXBMI"
+  ],
+  "scores": [
+    {
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5460428888866544,
+      "weighted_RMSE": 0.9252469398226149,
+      "MAE": 0.626049510022775,
+      "RMSE": 1.1169604038858028
+    },
+    {
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.49868896740361046,
+      "weighted_RMSE": 0.876317777969263,
+      "MAE": 0.583446159415193,
+      "RMSE": 1.0597110472636497
+    },
+    {
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.4866695719653993,
+      "weighted_RMSE": 0.8578285231397611,
+      "MAE": 0.5704607587811034,
+      "RMSE": 1.0421191549172943
+    },
+    {
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.5003334584833654,
+      "weighted_RMSE": 0.8707134780852573,
+      "MAE": 0.577338597298339,
+      "RMSE": 1.046995976199579
+    }
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 3961,
+      "test_n": 979,
+      "train_groups": 24,
+      "test_groups": 6,
+      "PSU_overlap": 0,
+      "scores": [
+        {
+          "model": "Weighted mean",
+          "weighted_MAE": 0.5862566998745292,
+          "weighted_RMSE": 1.0367529619165259,
+          "MAE": 0.5970357083259574,
+          "RMSE": 1.0373760783488475
+        },
+        {
+          "model": "Age + sex ridge",
+          "weighted_MAE": 0.5459170421444766,
+          "weighted_RMSE": 1.0003713058010333,
+          "MAE": 0.5607810688757158,
+          "RMSE": 0.9919785508665813
+        },
+        {
+          "model": "Age + sex + BMI ridge",
+          "weighted_MAE": 0.5427346442430054,
+          "weighted_RMSE": 0.9735354641310636,
+          "MAE": 0.544348806976709,
+          "RMSE": 0.9620877316596687
+        },
+        {
+          "model": "Gradient boosting",
+          "weighted_MAE": 0.547088904029013,
+          "weighted_RMSE": 0.98715011200136,
+          "MAE": 0.552566143431658,
+          "RMSE": 0.9706365677697848
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "train_n": 3952,
+      "test_n": 988,
+      "train_groups": 24,
+      "test_groups": 6,
+      "PSU_overlap": 0,
+      "scores": [
+        {
+          "model": "Weighted mean",
+          "weighted_MAE": 0.4947979895981414,
+          "weighted_RMSE": 0.8223098472862299,
+          "MAE": 0.5906873463900217,
+          "RMSE": 1.0556768334204965
+        },
+        {
+          "model": "Age + sex ridge",
+          "weighted_MAE": 0.4357498396557626,
+          "weighted_RMSE": 0.7746250659229371,
+          "MAE": 0.5397219952063661,
+          "RMSE": 1.0000951290087916
+        },
+        {
+          "model": "Age + sex + BMI ridge",
+          "weighted_MAE": 0.4270283518948077,
+          "weighted_RMSE": 0.7562558125274278,
+          "MAE": 0.524286743164073,
+          "RMSE": 0.9832700213556904
+        },
+        {
+          "model": "Gradient boosting",
+          "weighted_MAE": 0.45336685116417935,
+          "weighted_RMSE": 0.780386223154104,
+          "MAE": 0.5373384104774269,
+          "RMSE": 0.9867311701401654
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train_n": 3960,
+      "test_n": 980,
+      "train_groups": 24,
+      "test_groups": 6,
+      "PSU_overlap": 0,
+      "scores": [
+        {
+          "model": "Weighted mean",
+          "weighted_MAE": 0.5495142480661281,
+          "weighted_RMSE": 0.8861133666649724,
+          "MAE": 0.6382387044693664,
+          "RMSE": 1.142122750161991
+        },
+        {
+          "model": "Age + sex ridge",
+          "weighted_MAE": 0.49424787254938823,
+          "weighted_RMSE": 0.8435240591338061,
+          "MAE": 0.59210943087058,
+          "RMSE": 1.0958855682873814
+        },
+        {
+          "model": "Age + sex + BMI ridge",
+          "weighted_MAE": 0.4728350283889946,
+          "weighted_RMSE": 0.8183073579332492,
+          "MAE": 0.5786926274657765,
+          "RMSE": 1.0779551280739084
+        },
+        {
+          "model": "Gradient boosting",
+          "weighted_MAE": 0.4961686289950927,
+          "weighted_RMSE": 0.8364032894457559,
+          "MAE": 0.5901433690380837,
+          "RMSE": 1.0814652642724327
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train_n": 3939,
+      "test_n": 1001,
+      "train_groups": 24,
+      "test_groups": 6,
+      "PSU_overlap": 0,
+      "scores": [
+        {
+          "model": "Weighted mean",
+          "weighted_MAE": 0.5624944747289177,
+          "weighted_RMSE": 0.9346267377675951,
+          "MAE": 0.6706805033999527,
+          "RMSE": 1.1852261906069843
+        },
+        {
+          "model": "Age + sex ridge",
+          "weighted_MAE": 0.5266973027888583,
+          "weighted_RMSE": 0.879835825005216,
+          "MAE": 0.635216863392619,
+          "RMSE": 1.1139526813223062
+        },
+        {
+          "model": "Age + sex + BMI ridge",
+          "weighted_MAE": 0.5106415729794668,
+          "weighted_RMSE": 0.8620677445179347,
+          "MAE": 0.6211626048965058,
+          "RMSE": 1.0961553635456989
+        },
+        {
+          "model": "Gradient boosting",
+          "weighted_MAE": 0.511763476536595,
+          "weighted_RMSE": 0.8675814913106795,
+          "MAE": 0.6224130600876703,
+          "RMSE": 1.1090799496935833
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "train_n": 3948,
+      "test_n": 992,
+      "train_groups": 24,
+      "test_groups": 6,
+      "PSU_overlap": 0,
+      "scores": [
+        {
+          "model": "Weighted mean",
+          "weighted_MAE": 0.5443644118262978,
+          "weighted_RMSE": 0.9580394051333695,
+          "MAE": 0.6328250086136314,
+          "RMSE": 1.1552802968323712
+        },
+        {
+          "model": "Age + sex ridge",
+          "weighted_MAE": 0.49862951525386834,
+          "weighted_RMSE": 0.8961455614859264,
+          "MAE": 0.5885632130127603,
+          "RMSE": 1.0892324665913768
+        },
+        {
+          "model": "Age + sex + BMI ridge",
+          "weighted_MAE": 0.4901392127656436,
+          "weighted_RMSE": 0.8906308357926241,
+          "MAE": 0.582924215407747,
+          "RMSE": 1.0822999724113704
+        },
+        {
+          "model": "Gradient boosting",
+          "weighted_MAE": 0.502348320869604,
+          "weighted_RMSE": 0.8959192986996687,
+          "MAE": 0.5834920281022418,
+          "RMSE": 1.078315134991722
+        }
+      ]
+    }
+  ],
+  "subgroups": [
+    {
+      "variable": "sex",
+      "group": "Female",
+      "n": 2568,
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5210109010309246,
+      "weighted_RMSE": 0.8814383190540077,
+      "MAE": 0.6013366169272079,
+      "RMSE": 1.0738613542412268
+    },
+    {
+      "variable": "sex",
+      "group": "Female",
+      "n": 2568,
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.47291205909221895,
+      "weighted_RMSE": 0.8381209990780722,
+      "MAE": 0.5529190370303189,
+      "RMSE": 1.022010541508301
+    },
+    {
+      "variable": "sex",
+      "group": "Female",
+      "n": 2568,
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.45330673633355595,
+      "weighted_RMSE": 0.8163531678703776,
+      "MAE": 0.5337680145290408,
+      "RMSE": 1.0012220350794232
+    },
+    {
+      "variable": "sex",
+      "group": "Female",
+      "n": 2568,
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.464836096119914,
+      "weighted_RMSE": 0.8269843668649949,
+      "MAE": 0.539346583593047,
+      "RMSE": 1.0044864057178524
+    },
+    {
+      "variable": "sex",
+      "group": "Male",
+      "n": 2372,
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5732282021072502,
+      "weighted_RMSE": 0.9705868671627605,
+      "MAE": 0.6528044465613145,
+      "RMSE": 1.161819720287295
+    },
+    {
+      "variable": "sex",
+      "group": "Male",
+      "n": 2372,
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.5266832813327519,
+      "weighted_RMSE": 0.9159979197179517,
+      "MAE": 0.6164957590291715,
+      "RMSE": 1.0990698243418637
+    },
+    {
+      "variable": "sex",
+      "group": "Male",
+      "n": 2372,
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.522902377038901,
+      "weighted_RMSE": 0.9007109719695774,
+      "MAE": 0.6101854498600647,
+      "RMSE": 1.084658601821657
+    },
+    {
+      "variable": "sex",
+      "group": "Male",
+      "n": 2372,
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.5388844085683996,
+      "weighted_RMSE": 0.9158422466211877,
+      "MAE": 0.6184699173637648,
+      "RMSE": 1.0911527098678135
+    },
+    {
+      "variable": "age",
+      "group": "20-39",
+      "n": 1481,
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5156978049533548,
+      "weighted_RMSE": 0.7123569310469919,
+      "MAE": 0.4820510839648182,
+      "RMSE": 0.7004370161097617
+    },
+    {
+      "variable": "age",
+      "group": "20-39",
+      "n": 1481,
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.33287253474912276,
+      "weighted_RMSE": 0.6090044902059903,
+      "MAE": 0.3313456719549558,
+      "RMSE": 0.6223907348305043
+    },
+    {
+      "variable": "age",
+      "group": "20-39",
+      "n": 1481,
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.33363959306611163,
+      "weighted_RMSE": 0.5948266548133547,
+      "MAE": 0.3361095710257906,
+      "RMSE": 0.6074344249994934
+    },
+    {
+      "variable": "age",
+      "group": "20-39",
+      "n": 1481,
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.3244492961257741,
+      "weighted_RMSE": 0.6012005593980021,
+      "MAE": 0.33120967593767137,
+      "RMSE": 0.6191871341699012
+    },
+    {
+      "variable": "age",
+      "group": "40-59",
+      "n": 1568,
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5518005128988495,
+      "weighted_RMSE": 1.03318894214318,
+      "MAE": 0.6392770767269478,
+      "RMSE": 1.22355954312066
+    },
+    {
+      "variable": "age",
+      "group": "40-59",
+      "n": 1568,
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.5562305058258554,
+      "weighted_RMSE": 1.0209434210727124,
+      "MAE": 0.6359675626509259,
+      "RMSE": 1.208001383738525
+    },
+    {
+      "variable": "age",
+      "group": "40-59",
+      "n": 1568,
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.5370583769727928,
+      "weighted_RMSE": 0.9956523766100772,
+      "MAE": 0.6127882725480863,
+      "RMSE": 1.181875591680599
+    },
+    {
+      "variable": "age",
+      "group": "40-59",
+      "n": 1568,
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.5822357671563151,
+      "weighted_RMSE": 1.0118723488067725,
+      "MAE": 0.6403657397113439,
+      "RMSE": 1.176401185220319
+    },
+    {
+      "variable": "age",
+      "group": "60+",
+      "n": 1891,
+      "model": "Weighted mean",
+      "weighted_MAE": 0.5763703810740969,
+      "weighted_RMSE": 1.0146090826579275,
+      "MAE": 0.727858523454658,
+      "RMSE": 1.2781159910760058
+    },
+    {
+      "variable": "age",
+      "group": "60+",
+      "n": 1891,
+      "model": "Age + sex ridge",
+      "weighted_MAE": 0.6329736697855765,
+      "weighted_RMSE": 0.9616717418629277,
+      "MAE": 0.7373368318927087,
+      "RMSE": 1.19175107875297
+    },
+    {
+      "variable": "age",
+      "group": "60+",
+      "n": 1891,
+      "model": "Age + sex + BMI ridge",
+      "weighted_MAE": 0.6138725594148808,
+      "weighted_RMSE": 0.9471860164275587,
+      "MAE": 0.7189031530058462,
+      "RMSE": 1.1789214531037087
+    },
+    {
+      "variable": "age",
+      "group": "60+",
+      "n": 1891,
+      "model": "Gradient boosting",
+      "weighted_MAE": 0.6176190423856536,
+      "weighted_RMSE": 0.9617802028869886,
+      "MAE": 0.7178411743642074,
+      "RMSE": 1.1899100018421558
+    }
+  ],
+  "permutation_importance": {
+    "model": "Gradient boosting",
+    "metric": "increase in held-out weighted MAE",
+    "mean_by_feature": {
+      "RIDAGEYR": 0.12092266169621216,
+      "RIAGENDR": 0.000671736926432176,
+      "BMXBMI": 0.03295625491310096
+    },
+    "repeats_per_fold": 5,
+    "used_for_selection": false
+  },
+  "seed": 20261031
+}

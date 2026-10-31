@@ -132,3 +132,9 @@ confounding; top-coded age (80); linear age adjustment; sparse BMI domains;
 pregnancy not excluded in this minimal fixed scope. This is not a current
 prevalence estimate, causal analysis, disease-prediction tool or clinical advice.
 See [full limitations](docs/limitations.md).
+
+## Machine learning supplement
+
+Added PSU-grouped five-fold held-out HbA1c benchmarks on 4,940 adults. Weighted MAE: mean baseline 0.5460, age/sex ridge 0.4987, age/sex/BMI ridge 0.4867, gradient boosting 0.5003 percentage points. BMI ridge reduced MAE by 10.9% versus the mean baseline. The nonlinear model did not outperform ridge. These are concurrent measurements, not future diabetes prediction.
+
+Open [ML report](reports/ml_report.html), [one-page brief](reports/ml_brief.pdf), [frozen protocol](docs/ml_plan.md), [model card](docs/ml_model_card.md), and [aggregate evidence](evidence/ml_results.json). The existing `bash run_all.sh` now reproduces the ML module too. No additional credentials or service are required. Individual predictions stay under ignored `data/processed/`.

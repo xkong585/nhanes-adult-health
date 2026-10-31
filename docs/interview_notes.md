@@ -31,3 +31,9 @@ selection bias. I can show the complete-case comparison and sensitivity results.
   residual df also subtract the non-intercept model degrees of freedom.
 - Why no outlier deletion? Real extremes can be valid. They are flagged and
   diagnostics are shown; values are not removed to improve a result.
+
+## ML interview discussion
+
+Added PSU-grouped five-fold held-out HbA1c benchmarks on 4,940 adults. Weighted MAE: mean baseline 0.5460, age/sex ridge 0.4987, age/sex/BMI ridge 0.4867, gradient boosting 0.5003 percentage points. BMI ridge reduced MAE by 10.9% versus the mean baseline. The nonlinear model did not outperform ridge. These are concurrent measurements, not future diabetes prediction.
+
+Explain: (1) why the split matches the data unit; (2) how future features are excluded; (3) why a baseline is mandatory; (4) why calibration can fail to improve performance; (5) why permutation importance is not a causal coefficient.

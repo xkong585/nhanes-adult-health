@@ -1,33 +1,37 @@
 {
-  "started_at_utc": "2026-10-31T19:28:10.458459+00:00",
+  "started_at_utc": "2026-10-31T23:21:45.792625+00:00",
   "status": "passed",
   "steps": [
     {
       "name": "download_and_verify",
-      "seconds": 0.007
+      "seconds": 0.016
     },
     {
       "name": "decode_official_XPT",
-      "seconds": 0.269
+      "seconds": 0.46
     },
     {
       "name": "prepare_and_QC",
-      "seconds": 0.082
+      "seconds": 0.103
     },
     {
       "name": "survey_analysis",
-      "seconds": 0.607
+      "seconds": 0.851
     },
     {
       "name": "independent_reconciliation",
-      "seconds": 0.022
+      "seconds": 0.025
+    },
+    {
+      "name": "ML_benchmarks",
+      "seconds": 1.034
     },
     {
       "name": "tests",
-      "seconds": 0.311
+      "seconds": 1.111
     }
   ],
-  "elapsed_seconds": 1.608,
+  "elapsed_seconds": 3.753,
   "environment": {
     "python": "3.12.14",
     "platform": "macOS-26.6-arm64-arm-64bit",
@@ -38,9 +42,13 @@
       "pyarrow": "19.0.1",
       "matplotlib": "3.10.7",
       "reportlab": "4.4.4",
-      "pytest": "8.4.2"
+      "pytest": "8.4.2",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0"
     }
   },
   "source_lock_sha256": "df11e020b5eb2f34a0af9416d06c22baf92678d8a5522e1f1574f219dd445227",
-  "analysis_plan_sha256": "67349e87c71f427e076fa03bac3685bee1f445caeed3246c2de95f742bda38a6"
+  "analysis_plan_sha256": "67349e87c71f427e076fa03bac3685bee1f445caeed3246c2de95f742bda38a6",
+  "ml_plan_sha256": "98fcbe845e5f0b3121a3a1907ce09997bb289b1965cd5ccbe3e2809f9a305cc9"
 }

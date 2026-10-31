@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "mode": "empty_raw_and_processed_directories; official downloads; full pipeline and tests",
-  "elapsed_seconds": 12.907,
+  "elapsed_seconds": 14.845,
   "tables": [
     {
       "table": "table1.csv",
@@ -22,38 +22,47 @@
       "table": "reconciliation_checks.csv",
       "identical": true,
       "sha256": "b0c9457de6c53746c5cb6375224ea027291063a5673aa8bfa0b2645c1be9990e"
+    },
+    {
+      "table": "ml_results.json",
+      "identical": true,
+      "sha256": "39a417b5239c98b254f518c17436f12ec261f199e3384765ffe4ce2a4c45729a"
     }
   ],
   "clean_run_log": {
-    "started_at_utc": "2026-10-31T19:29:10.316754+00:00",
+    "started_at_utc": "2026-10-31T23:22:05.067816+00:00",
     "status": "passed",
     "steps": [
       {
         "name": "download_and_verify",
-        "seconds": 4.715
+        "seconds": 4.617
       },
       {
         "name": "decode_official_XPT",
-        "seconds": 0.311
+        "seconds": 0.32
       },
       {
         "name": "prepare_and_QC",
-        "seconds": 0.084
+        "seconds": 0.107
       },
       {
         "name": "survey_analysis",
-        "seconds": 0.619
+        "seconds": 0.624
       },
       {
         "name": "independent_reconciliation",
-        "seconds": 0.027
+        "seconds": 0.039
+      },
+      {
+        "name": "ML_benchmarks",
+        "seconds": 7.623
       },
       {
         "name": "tests",
-        "seconds": 0.304
+        "seconds": 1.026
       }
     ],
-    "elapsed_seconds": 12.648,
+    "elapsed_seconds": 14.499,
     "environment": {
       "python": "3.12.14",
       "platform": "macOS-26.6-arm64-arm-64bit",
@@ -64,7 +73,10 @@
         "pyarrow": "19.0.1",
         "matplotlib": "3.10.7",
         "reportlab": "4.4.4",
-        "pytest": "8.4.2"
+        "pytest": "8.4.2",
+        "scikit-learn": "1.7.2",
+        "joblib": "1.6.0",
+        "threadpoolctl": "3.7.0"
       }
     },
     "source_lock_sha256": "df11e020b5eb2f34a0af9416d06c22baf92678d8a5522e1f1574f219dd445227",
